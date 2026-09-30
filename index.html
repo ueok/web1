@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>李墨 · 作品集</title>
+  <meta name="description" content="李墨的个人作品集 — 设计与创意项目展示">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@400;500;700&family=Noto+Serif+SC:wght@600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- 导航 -->
+  <header class="nav" id="nav">
+    <div class="container nav-inner">
+      <a href="#top" class="logo">李墨<span class="logo-dot">.</span></a>
+      <nav class="nav-links" id="navLinks">
+        <a href="#works">作品</a>
+        <a href="#about">关于</a>
+        <a href="#contact">联系</a>
+      </nav>
+      <button class="nav-toggle" id="navToggle" aria-label="打开菜单">
+        <span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <!-- 首屏 -->
+  <section class="hero" id="top">
+    <div class="container">
+      <p class="hero-kicker">设计师 / 创意开发者</p>
+      <h1 class="hero-title">用简洁的视觉<br>讲清楚复杂的事<span class="accent">。</span></h1>
+      <p class="hero-desc">你好，我是李墨。我专注于品牌视觉与交互设计，喜欢把想法打磨成克制而有力量的作品。这里是我的部分项目精选。</p>
+      <div class="hero-actions">
+        <a href="#works" class="btn btn-primary">查看作品</a>
+        <a href="#contact" class="btn btn-ghost">联系我</a>
+      </div>
+    </div>
+    <div class="hero-scroll">向下滚动</div>
+  </section>
+
+  <!-- 作品 -->
+  <section class="section" id="works">
+    <div class="container">
+      <div class="section-head">
+        <h2 class="section-title">精选作品</h2>
+        <div class="filters" id="filters">
+          <button class="filter active" data-filter="all">全部</button>
+          <button class="filter" data-filter="brand">品牌</button>
+          <button class="filter" data-filter="ui">界面</button>
+          <button class="filter" data-filter="motion">动效</button>
+        </div>
+      </div>
+
+      <div class="works-grid" id="worksGrid">
+        <!-- 作品卡片：替换 data-* 与文本即可换成真实项目 -->
+        <article class="work-card" data-category="brand">
+          <a href="#" class="work-cover cover-1" aria-label="项目一"></a>
+          <div class="work-info">
+            <h3 class="work-name">山屿茶品牌视觉</h3>
+            <p class="work-meta">品牌设计 · 2026</p>
+          </div>
+        </article>
+
+        <article class="work-card" data-category="ui">
+          <a href="#" class="work-cover cover-2" aria-label="项目二"></a>
+          <div class="work-info">
+            <h3 class="work-name">云栖数据仪表盘</h3>
+            <p class="work-meta">界面设计 · 2026</p>
+          </div>
+        </article>
+
+        <article class="work-card" data-category="motion">
+          <a href="#" class="work-cover cover-3" aria-label="项目三"></a>
+          <div class="work-info">
+            <h3 class="work-name">城市光影动态海报</h3>
+            <p class="work-meta">动效设计 · 2025</p>
+          </div>
+        </article>
+
+        <article class="work-card" data-category="brand">
+          <a href="#" class="work-cover cover-4" aria-label="项目四"></a>
+          <div class="work-info">
+            <h3 class="work-name">拾光书店识别系统</h3>
+            <p class="work-meta">品牌设计 · 2025</p>
+          </div>
+        </article>
+
+        <article class="work-card" data-category="ui">
+          <a href="#" class="work-cover cover-5" aria-label="项目五"></a>
+          <div class="work-info">
+            <h3 class="work-name">旅行手账 App</h3>
+            <p class="work-meta">界面设计 · 2025</p>
+          </div>
+        </article>
+
+        <article class="work-card" data-category="motion">
+          <a href="#" class="work-cover cover-6" aria-label="项目六"></a>
+          <div class="work-info">
+            <h3 class="work-name">产品发布开场动画</h3>
+            <p class="work-meta">动效设计 · 2024</p>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- 关于 -->
+  <section class="section section-alt" id="about">
+    <div class="container about-grid">
+      <div class="about-text">
+        <h2 class="section-title">关于我</h2>
+        <p>过去几年里，我在品牌、界面与动态设计之间来回穿梭，逐渐形成了自己的方法：先理解问题的本质，再用最少的元素给出回答。</p>
+        <p>我相信好的设计是安静的——它不抢戏，却让人一眼明白。工作之外，我喜欢摄影、爬山和收集旧海报。</p>
+        <ul class="about-facts">
+          <li><strong>6 年+</strong>设计经验</li>
+          <li><strong>40 个+</strong>交付项目</li>
+          <li><strong>12 位</strong>长期合作客户</li>
+        </ul>
+      </div>
+      <div class="about-visual" aria-hidden="true"></div>
+    </div>
+  </section>
+
+  <!-- 联系 -->
+  <section class="section contact" id="contact">
+    <div class="container contact-inner">
+      <h2 class="section-title">有想法？聊聊看。</h2>
+      <p class="contact-desc">无论是完整项目还是一次快速咨询，都欢迎来信，我会在两个工作日内回复。</p>
+      <a href="mailto:hello@example.com" class="btn btn-primary btn-lg">hello@example.com</a>
+      <div class="socials">
+        <a href="#" aria-label="微博">微博</a>
+        <a href="#" aria-label="站酷">站酷</a>
+        <a href="#" aria-label="GitHub">GitHub</a>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="container footer-inner">
+      <p>© 2026 李墨. 保留所有权利。</p>
+      <a href="#top" class="back-top">回到顶部 ↑</a>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
