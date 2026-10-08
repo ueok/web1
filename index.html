@@ -3,144 +3,252 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>李墨 · 作品集</title>
-  <meta name="description" content="李墨的个人作品集 — 设计与创意项目展示">
+  <title>星核科技 STELLARCORE — 下一代 AI 基础设施</title>
+  <meta name="description" content="星核科技构建自主智能体、边缘智能与隐私计算平台，让每一家企业都拥有自主进化的能力。">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@400;500;700&family=Noto+Serif+SC:wght@600&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500;700;900&family=JetBrains+Mono:wght@400;500&family=Noto+Sans+SC:wght@400;500;700;900&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
 
+  <!-- 氛围层：渐变网格辉光 + 颗粒噪点（纯装饰，不挡交互） -->
+  <div class="atmosphere" aria-hidden="true"></div>
+  <div class="grain" aria-hidden="true"></div>
+  <!-- 跟随光标的光点（触屏 / 降级动效下自动禁用） -->
+  <div class="cursor-glow" aria-hidden="true"></div>
+
   <!-- 导航 -->
   <header class="nav" id="nav">
     <div class="container nav-inner">
-      <a href="#top" class="logo">李墨<span class="logo-dot">.</span></a>
+      <a href="#top" class="logo">
+        <span class="logo-mark">◈</span>
+        STELLAR<span class="logo-accent">CORE</span>
+      </a>
       <nav class="nav-links" id="navLinks">
-        <a href="#works">作品</a>
+        <a href="#capabilities">能力</a>
+        <a href="#tech">技术</a>
+        <a href="#product">产品</a>
         <a href="#about">关于</a>
-        <a href="#contact">联系</a>
       </nav>
-      <button class="nav-toggle" id="navToggle" aria-label="打开菜单">
-        <span></span><span></span>
-      </button>
+      <div class="nav-right">
+        <a href="#contact" class="btn btn-primary btn-sm">预约演示</a>
+        <button class="nav-toggle" id="navToggle" aria-label="打开菜单"><span></span><span></span></button>
+      </div>
     </div>
   </header>
 
-  <!-- 首屏 -->
-  <section class="hero" id="top">
-    <div class="container">
-      <p class="hero-kicker">设计师 / 创意开发者</p>
-      <h1 class="hero-title">用简洁的视觉<br>讲清楚复杂的事<span class="accent">。</span></h1>
-      <p class="hero-desc">你好，我是李墨。我专注于品牌视觉与交互设计，喜欢把想法打磨成克制而有力量的作品。这里是我的部分项目精选。</p>
-      <div class="hero-actions">
-        <a href="#works" class="btn btn-primary">查看作品</a>
-        <a href="#contact" class="btn btn-ghost">联系我</a>
+  <main id="top">
+
+    <!-- 首屏 -->
+    <section class="hero">
+      <div class="perspective-grid" aria-hidden="true"></div>
+      <div class="container hero-inner">
+        <div class="hero-main">
+          <p class="kicker reveal">// SYSTEM ONLINE — 2026</p>
+          <h1 class="hero-title reveal">
+            以算力，<br>
+            重构<span class="grad">产业的边界</span>
+          </h1>
+          <p class="hero-desc reveal">
+            星核科技构建下一代 AI 基础设施与边缘智能平台——
+            自主智能体、神经形态算力与隐私计算，让每一家企业都拥有自主进化的能力。
+          </p>
+          <div class="hero-actions reveal">
+            <a href="#capabilities" class="btn btn-primary">探索核心能力</a>
+            <a href="#contact" class="btn btn-ghost">预约一次演示 →</a>
+          </div>
+        </div>
+
+        <!-- HUD 实时面板 -->
+        <aside class="hud reveal" aria-label="系统实时状态">
+          <div class="hud-corner tl"></div><div class="hud-corner tr"></div>
+          <div class="hud-corner bl"></div><div class="hud-corner br"></div>
+          <div class="hud-head">
+            <span class="dot-live"></span> 集群实时状态
+          </div>
+          <div class="hud-metric">
+            <span class="hud-label">在线节点</span>
+            <span class="hud-value" data-count="12480">0</span>
+          </div>
+          <div class="hud-metric">
+            <span class="hud-label">平均时延</span>
+            <span class="hud-value">38<small>ms</small></span>
+          </div>
+          <div class="hud-bars" aria-hidden="true">
+            <span style="--h:62%"></span><span style="--h:80%"></span>
+            <span style="--h:48%"></span><span style="--h:92%"></span>
+            <span style="--h:70%"></span><span style="--h:58%"></span>
+            <span style="--h:84%"></span><span style="--h:66%"></span>
+          </div>
+          <div class="hud-foot">
+            <span>UPTIME 99.999%</span>
+            <span>SLA · ACTIVE</span>
+          </div>
+        </aside>
+      </div>
+      <!-- 首屏四角 HUD 方括号 -->
+      <span class="bracket b-tl" aria-hidden="true"></span>
+      <span class="bracket b-tr" aria-hidden="true"></span>
+      <span class="bracket b-bl" aria-hidden="true"></span>
+      <span class="bracket b-br" aria-hidden="true"></span>
+    </section>
+
+    <!-- 滚动关键词跑马灯 -->
+    <div class="marquee" aria-hidden="true">
+      <div class="marquee-track">
+        <span>通用人工智能</span><span class="sep">/</span>
+        <span>边缘智能</span><span class="sep">/</span>
+        <span>隐私计算</span><span class="sep">/</span>
+        <span>神经形态算力</span><span class="sep">/</span>
+        <span>自主智能体</span><span class="sep">/</span>
+        <span>大模型工厂</span><span class="sep">/</span>
+        <span>实时决策引擎</span><span class="sep">/</span>
+        <span>通用人工智能</span><span class="sep">/</span>
+        <span>边缘智能</span><span class="sep">/</span>
+        <span>隐私计算</span><span class="sep">/</span>
+        <span>神经形态算力</span><span class="sep">/</span>
+        <span>自主智能体</span><span class="sep">/</span>
+        <span>大模型工厂</span><span class="sep">/</span>
+        <span>实时决策引擎</span>
       </div>
     </div>
-    <div class="hero-scroll">向下滚动</div>
-  </section>
 
-  <!-- 作品 -->
-  <section class="section" id="works">
-    <div class="container">
-      <div class="section-head">
-        <h2 class="section-title">精选作品</h2>
-        <div class="filters" id="filters">
-          <button class="filter active" data-filter="all">全部</button>
-          <button class="filter" data-filter="brand">品牌</button>
-          <button class="filter" data-filter="ui">界面</button>
-          <button class="filter" data-filter="motion">动效</button>
+    <!-- 核心能力 -->
+    <section class="section" id="capabilities">
+      <div class="container">
+        <div class="section-head">
+          <div>
+            <p class="tag">CORE SYSTEMS</p>
+            <h2 class="section-title">六套引擎，<br>驱动自主进化的业务</h2>
+          </div>
+          <p class="section-note">从底层算力到上层智能体，星核提供全栈可控的 AI 能力。</p>
+        </div>
+
+        <div class="cap-grid">
+          <article class="cap-card wide reveal">
+            <span class="cap-no">01</span>
+            <h3>自主智能体平台 · Agent OS</h3>
+            <p>可视化编排多智能体协作，支持长期记忆、工具调用与自我反思，把复杂流程交给机器自主完成。</p>
+            <span class="cap-line"></span>
+          </article>
+          <article class="cap-card reveal">
+            <span class="cap-no">02</span>
+            <h3>边缘智能 · Edge</h3>
+            <p>毫秒级推理下沉到设备端，离线可用、数据不出域。</p>
+          </article>
+          <article class="cap-card reveal">
+            <span class="cap-no">03</span>
+            <h3>隐私计算 · Confidential</h3>
+            <p>联邦学习与可信执行环境，让协作不泄露原始数据。</p>
+          </article>
+          <article class="cap-card reveal">
+            <span class="cap-no">04</span>
+            <h3>神经形态算力 · Neuromorphic</h3>
+            <p>类脑芯片架构，能效较传统 GPU 提升 40 倍。</p>
+          </article>
+          <article class="cap-card reveal">
+            <span class="cap-no">05</span>
+            <h3>大模型工厂 · Model Foundry</h3>
+            <p>从预训练到微调、蒸馏、部署的一站式流水线。</p>
+          </article>
+          <article class="cap-card wide reveal">
+            <span class="cap-no">06</span>
+            <h3>实时决策引擎 · Decision Grid</h3>
+            <p>融合时序预测与强化学习，在金融、能源、制造场景提供亚秒级闭环决策，已接入 240+ 行业模型。</p>
+            <span class="cap-line"></span>
+          </article>
         </div>
       </div>
+    </section>
 
-      <div class="works-grid" id="worksGrid">
-        <!-- 作品卡片：替换 data-* 与文本即可换成真实项目 -->
-        <article class="work-card" data-category="brand">
-          <a href="#" class="work-cover cover-1" aria-label="项目一"></a>
-          <div class="work-info">
-            <h3 class="work-name">山屿茶品牌视觉</h3>
-            <p class="work-meta">品牌设计 · 2026</p>
-          </div>
-        </article>
-
-        <article class="work-card" data-category="ui">
-          <a href="#" class="work-cover cover-2" aria-label="项目二"></a>
-          <div class="work-info">
-            <h3 class="work-name">云栖数据仪表盘</h3>
-            <p class="work-meta">界面设计 · 2026</p>
-          </div>
-        </article>
-
-        <article class="work-card" data-category="motion">
-          <a href="#" class="work-cover cover-3" aria-label="项目三"></a>
-          <div class="work-info">
-            <h3 class="work-name">城市光影动态海报</h3>
-            <p class="work-meta">动效设计 · 2025</p>
-          </div>
-        </article>
-
-        <article class="work-card" data-category="brand">
-          <a href="#" class="work-cover cover-4" aria-label="项目四"></a>
-          <div class="work-info">
-            <h3 class="work-name">拾光书店识别系统</h3>
-            <p class="work-meta">品牌设计 · 2025</p>
-          </div>
-        </article>
-
-        <article class="work-card" data-category="ui">
-          <a href="#" class="work-cover cover-5" aria-label="项目五"></a>
-          <div class="work-info">
-            <h3 class="work-name">旅行手账 App</h3>
-            <p class="work-meta">界面设计 · 2025</p>
-          </div>
-        </article>
-
-        <article class="work-card" data-category="motion">
-          <a href="#" class="work-cover cover-6" aria-label="项目六"></a>
-          <div class="work-info">
-            <h3 class="work-name">产品发布开场动画</h3>
-            <p class="work-meta">动效设计 · 2024</p>
-          </div>
-        </article>
+    <!-- 技术指标数据带 -->
+    <section class="section band" id="tech">
+      <div class="container band-inner">
+        <div class="stat reveal">
+          <span class="stat-num" data-count="99.999" data-suffix="%">0</span>
+          <span class="stat-label">服务可用性 SLA</span>
+        </div>
+        <div class="stat reveal">
+          <span class="stat-num" data-count="12.4" data-suffix="M">0</span>
+          <span class="stat-label">全球边缘节点</span>
+        </div>
+        <div class="stat reveal">
+          <span class="stat-num" data-count="38" data-suffix="ms">0</span>
+          <span class="stat-label">平均推理时延</span>
+        </div>
+        <div class="stat reveal">
+          <span class="stat-num" data-count="240" data-suffix="+">0</span>
+          <span class="stat-label">行业预训练模型</span>
+        </div>
       </div>
-    </div>
-  </section>
+    </section>
 
-  <!-- 关于 -->
-  <section class="section section-alt" id="about">
-    <div class="container about-grid">
-      <div class="about-text">
-        <h2 class="section-title">关于我</h2>
-        <p>过去几年里，我在品牌、界面与动态设计之间来回穿梭，逐渐形成了自己的方法：先理解问题的本质，再用最少的元素给出回答。</p>
-        <p>我相信好的设计是安静的——它不抢戏，却让人一眼明白。工作之外，我喜欢摄影、爬山和收集旧海报。</p>
-        <ul class="about-facts">
-          <li><strong>6 年+</strong>设计经验</li>
-          <li><strong>40 个+</strong>交付项目</li>
-          <li><strong>12 位</strong>长期合作客户</li>
-        </ul>
+    <!-- 产品聚焦 -->
+    <section class="section" id="product">
+      <div class="container product">
+        <div class="product-copy reveal">
+          <p class="tag">FLAGSHIP</p>
+          <h2 class="section-title">STELLAR One<br>一个平台，掌控全部智能</h2>
+          <p class="product-desc">统一的控制平面，把算力调度、模型生命周期、智能体协作与可观测性收进同一块屏幕。无需拼接十款工具，企业 AI 从实验到生产只差一次部署。</p>
+          <ul class="product-list">
+            <li>统一算力池：GPU / NPU / 神经形态按需调度</li>
+            <li>模型仓库：版本、血缘、回滚一目了然</li>
+            <li>智能体编排：低代码画布 + 全代码双模式</li>
+            <li>全链路可观测：成本、延迟、漂移实时告警</li>
+          </ul>
+          <a href="#contact" class="btn btn-primary">查看产品白皮书</a>
+        </div>
+        <div class="product-visual reveal" aria-hidden="true">
+          <div class="screen">
+            <div class="screen-bar"></div>
+            <div class="screen-grid">
+              <div class="cell c1"><b>12.4M</b><small>NODE</small></div>
+              <div class="cell c2"><b>38ms</b><small>LAT</small></div>
+              <div class="cell c3"><b>99.9%</b><small>OK</small></div>
+              <div class="cell c4"><b>240+</b><small>MODEL</small></div>
+            </div>
+            <div class="screen-wave"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></div>
+          </div>
+        </div>
       </div>
-      <div class="about-visual" aria-hidden="true"></div>
-    </div>
-  </section>
+    </section>
 
-  <!-- 联系 -->
-  <section class="section contact" id="contact">
-    <div class="container contact-inner">
-      <h2 class="section-title">有想法？聊聊看。</h2>
-      <p class="contact-desc">无论是完整项目还是一次快速咨询，都欢迎来信，我会在两个工作日内回复。</p>
-      <a href="mailto:hello@example.com" class="btn btn-primary btn-lg">hello@example.com</a>
-      <div class="socials">
-        <a href="#" aria-label="微博">微博</a>
-        <a href="#" aria-label="站酷">站酷</a>
-        <a href="#" aria-label="GitHub">GitHub</a>
+    <!-- 关于 -->
+    <section class="section section-about" id="about">
+      <div class="container about-grid">
+        <div class="about-text reveal">
+          <p class="tag">WHO WE ARE</p>
+          <h2 class="section-title">为产业的下一个十年，造底座</h2>
+          <p>星核科技成立于 2019 年，团队来自顶尖实验室与一线云厂商。我们相信，智能不应被少数巨头垄断——它应当像电力一样，稳定、廉价、随处可得。</p>
+        </div>
+        <div class="about-visual reveal" aria-hidden="true">
+          <div class="orbit">
+            <span class="ring r1"></span><span class="ring r2"></span><span class="ring r3"></span>
+            <span class="core">◈</span>
+          </div>
+        </div>
       </div>
-    </div>
-  </section>
+    </section>
+
+    <!-- 联系 CTA -->
+    <section class="section cta" id="contact">
+      <div class="container cta-inner reveal">
+        <h2 class="cta-title">把未来，接入你的业务</h2>
+        <p class="cta-desc">留个邮箱，我们的架构师会在 1 个工作日内联系你，定制一份可落地的智能升级方案。</p>
+        <form class="cta-form" id="ctaForm" novalidate>
+          <input type="email" id="email" name="email" placeholder="you@company.com" aria-label="邮箱" required>
+          <button type="submit" class="btn btn-primary">预约演示</button>
+        </form>
+        <p class="cta-hint" id="ctaHint" role="status"></p>
+      </div>
+    </section>
+  </main>
 
   <footer class="footer">
     <div class="container footer-inner">
-      <p>© 2026 李墨. 保留所有权利。</p>
+      <span class="logo"><span class="logo-mark">◈</span>STELLAR<span class="logo-accent">CORE</span></span>
+      <p>© 2026 星核科技 STELLARCORE. 让智能像电力一样随处可达。</p>
       <a href="#top" class="back-top">回到顶部 ↑</a>
     </div>
   </footer>
