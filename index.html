@@ -1,231 +1,414 @@
 <!DOCTYPE html>
-<html lang="zh-CN">
+<html lang="en">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>ELEMENT VAPE — Online Vape Shop · Disposables, Kits & E-Liquid</title>
-  <meta name="description" content="Element Vape clone — a clean, responsive static storefront demo: disposables, starter kits, e-liquids, pod systems and more." />
+  <title>Batam Vape Manufacturing | OEM/ODM E-Cigarette Factory in Indonesia Free Trade Zone</title>
+  <meta name="description" content="ISO-certified vape OEM/ODM factory in Batam, Indonesia Free Trade Zone. 20 km from Singapore, duty-free imports, export-ready disposables, pod systems & e-liquids. Full Indonesia (BPOM 18/2025) compliance support." />
+  <meta name="keywords" content="Batam vape factory, Indonesia e-cigarette OEM ODM, free trade zone vape manufacturing, BPOM 18/2025 compliant, disposable vape Indonesia, pod system manufacturer" />
+  <meta name="author" content="[Your Factory Name]" />
+  <meta name="robots" content="index, follow" />
+
+  <!-- Open Graph / Social -->
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="Batam Vape Manufacturing — OEM/ODM Factory in Indonesia FTZ" />
+  <meta property="og:description" content="Duty-free, export-ready vape manufacturing in Batam Free Trade Zone. 20 km from Singapore. Full BPOM 18/2025 compliance support." />
+  <meta property="og:locale" content="en_US" />
+  <meta property="og:url" content="https://your-domain.pages.dev/" />
+
+  <link rel="canonical" href="https://your-domain.pages.dev/" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@500;600;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Sora:wght@600;700;800&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="css/style.css" />
+
+  <!-- JSON-LD: Organization + LocalBusiness -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": ["Organization", "LocalBusiness"],
+    "name": "[Your Factory Name] — Batam Vape Manufacturing",
+    "description": "OEM/ODM e-cigarette manufacturer in Batam Free Trade Zone, Indonesia.",
+    "url": "https://your-domain.pages.dev/",
+    "email": "hello@your-domain.com",
+    "address": {
+      "@type": "PostalAddress",
+      "addressLocality": "Batam",
+      "addressRegion": "Riau Islands",
+      "addressCountry": "ID"
+    },
+    "areaServed": ["United States", "European Union", "Southeast Asia", "Middle East", "Africa"],
+    "knowsAbout": ["Vape manufacturing", "OEM ODM", "Indonesia BPOM 18/2025 compliance", "Free Trade Zone logistics"]
+  }
+  </script>
+
+  <!-- JSON-LD: FAQ for SEO long-tail -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {"@type":"Question","name":"Is vaping legal in Indonesia?","acceptedAnswer":{"@type":"Answer","text":"Yes. E-cigarettes are legal in Indonesia but strictly regulated. Under BPOM Regulation No. 18/2025 (effective 26 July 2025, mandatory from 26 July 2026), vapes are classified as 'Other Processed Tobacco Products' (HPTL) and regulated like conventional tobacco, covering both natural and synthetic nicotine."}},
+      {"@type":"Question","name":"What are the benefits of manufacturing vapes in Batam Free Trade Zone?","acceptedAnswer":{"@type":"Answer","text":"Batam is a Free Trade Zone and SEZ. Production inputs (raw materials, machinery, components) enter duty-free, VAT-free and luxury-tax-free while inside the zone. Goods can be stored, assembled and re-exported without Indonesian import duties, and the island sits only 20 km from Singapore on a major shipping lane."}},
+      {"@type":"Question","name":"What certifications does an Indonesia vape factory need?","acceptedAnswer":{"@type":"Answer","text":"For the domestic market: BPOM, Ministry of Health and Ministry of Industry recommendation letters, SNI certification (e.g. SNI 9070:2022 for e-liquids), API importer license and NPPBKC excise registration. For export, products must meet destination rules such as US PMTA or EU TPD. ISO 9001/14001/45001 are common for quality systems."}}
+    ]
+  }
+  </script>
 </head>
 <body>
 
   <!-- ============ 顶部工具条 ============ -->
   <div class="topbar">
     <div class="wrap topbar__inner">
-      <span class="topbar__msg">🚚 Free Shipping on Orders Over <strong>$75</strong></span>
-      <nav class="topbar__links">
-        <a href="#">Track Order</a>
-        <span class="sep">/</span>
-        <a href="#">Help Center</a>
-        <span class="sep">/</span>
-        <a href="#">My Account</a>
-      </nav>
+      <span>📍 Batam, Indonesia · Free Trade Zone</span>
+      <span class="topbar__right">✉️ hello@your-domain.com · ☎️ +62 ___-___-___</span>
     </div>
   </div>
 
-  <!-- ============ 主头部 ============ -->
+  <!-- ============ 头部 ============ -->
   <header class="header" id="header">
     <div class="wrap header__inner">
-      <button class="nav-toggle" id="navToggle" aria-label="菜单">
-        <span></span><span></span><span></span>
-      </button>
-
-      <a href="#" class="logo">ELEMENT<span>VAPE</span></a>
-
-      <form class="search" role="search" onsubmit="return false;">
-        <input type="search" placeholder="Search for disposables, kits, e-liquids…" aria-label="搜索" />
-        <button type="submit" aria-label="搜索">🔍</button>
-      </form>
-
-      <div class="header__actions">
-        <a href="#" class="icon-btn" title="账户">
-          <span class="ic">👤</span><span class="lbl">Account</span>
-        </a>
-        <a href="#" class="icon-btn cart" title="购物车" id="cartBtn">
-          <span class="ic">🛒</span>
-          <span class="cart-badge" id="cartBadge">0</span>
-          <span class="lbl">Cart</span>
-        </a>
-      </div>
+      <button class="nav-toggle" id="navToggle" aria-label="Menu"><span></span><span></span><span></span></button>
+      <a href="#top" class="logo">[YOUR&nbsp;BRAND]<span>.id</span></a>
+      <nav class="nav" id="nav">
+        <a href="#batam">Why Batam</a>
+        <a href="#factory">Our Factory</a>
+        <a href="#compliance">Compliance</a>
+        <a href="#logistics">Logistics</a>
+        <a href="#process">Process</a>
+        <a href="#faq">FAQ</a>
+        <a href="#contact" class="btn btn--sm btn--primary">Get a Quote</a>
+      </nav>
     </div>
-
-    <!-- 分类导航 -->
-    <nav class="catnav" id="catnav">
-      <div class="wrap catnav__inner">
-        <a href="#">Disposables</a>
-        <a href="#">Kits &amp; Mods</a>
-        <a href="#">E-Liquids</a>
-        <a href="#">Pod Systems</a>
-        <a href="#">Tanks</a>
-        <a href="#">Coils</a>
-        <a href="#">Accessories</a>
-        <a href="#" class="hot">Deals</a>
-      </div>
-    </nav>
   </header>
 
   <!-- ============ Hero ============ -->
-  <section class="hero">
+  <section class="hero" id="top">
     <div class="wrap hero__inner">
       <div class="hero__copy">
-        <span class="hero__eyebrow">PREMIUM E-LIQUIDS</span>
-        <h1>Best Vape<br />of <span>2026</span></h1>
-        <p>Discover disposables, starter kits, and award-winning e-liquids — curated for flavor chasers and cloud lovers alike.</p>
+        <span class="hero__eyebrow">PREMIUM VAPE OEM / ODM · BATAM, INDONESIA</span>
+        <h1>Manufacture Vapes Where<br><span>Southeast Asia Meets the World</span></h1>
+        <p class="hero__lead">A duty-free, export-ready vape factory in Batam's Free Trade Zone — 20 km from Singapore, backed by a skilled workforce and full BPOM 18/2025 compliance support. Your brand, built to global standards.</p>
         <div class="hero__cta">
-          <a href="#trending" class="btn btn--primary">Shop Now</a>
-          <a href="#categories" class="btn btn--ghost">Browse Categories</a>
+          <a href="#contact" class="btn btn--primary btn--lg">Start Your Project</a>
+          <a href="#batam" class="btn btn--ghost btn--lg">Why Batam →</a>
         </div>
-        <div class="hero__stats">
-          <div><strong>430K+</strong><span>Verified Reviews</span></div>
-          <div><strong>$75</strong><span>Free Shipping</span></div>
-          <div><strong>24/7</strong><span>Customer Care</span></div>
-        </div>
+        <ul class="hero__stats">
+          <li><strong>20<span>km</span></strong><span class="lbl">to Singapore</span></li>
+          <li><strong>0<span>%</span></strong><span class="lbl">import duty in FTZ</span></li>
+          <li><strong>4<span>+</span></strong><span class="lbl">cargo ports &amp; airport</span></li>
+          <li><strong>ISO</strong><span class="lbl">9001 · 14001 · 45001</span></li>
+        </ul>
       </div>
-      <div class="hero__visual">
-        <div class="hero__card">
-          <span class="tag">TRENDING</span>
-          <div class="hero__device"></div>
-          <h3>Foger Switch Pro 30K</h3>
-          <div class="price">$16.99</div>
-          <div class="stars">★★★★★ <em>415 reviews</em></div>
-        </div>
+      <div class="hero__visual" aria-hidden="true">
+        <svg viewBox="0 0 420 360" class="region">
+          <defs>
+            <linearGradient id="sea" x1="0" y1="0" x2="1" y2="1">
+              <stop offset="0" stop-color="#0b1f3a"/><stop offset="1" stop-color="#123a5e"/>
+            </linearGradient>
+          </defs>
+          <rect x="0" y="0" width="420" height="360" rx="20" fill="url(#sea)"/>
+          <!-- Singapore -->
+          <circle cx="330" cy="120" r="9" fill="#ff6a2b"/>
+          <text x="330" y="100" fill="#cfe3ff" font-size="13" text-anchor="middle" font-family="Inter">SINGAPORE</text>
+          <!-- Batam -->
+          <path d="M70 210 q40 -30 110 -18 q60 10 95 40 q-20 50 -110 52 q-80 2 -95 -38 Z" fill="#19b3a6" opacity="0.92"/>
+          <text x="150" y="245" fill="#ffffff" font-size="15" font-weight="700" text-anchor="middle" font-family="Inter">BATAM FTZ</text>
+          <!-- dashed link -->
+          <line x1="178" y1="215" x2="322" y2="122" stroke="#ff6a2b" stroke-width="2.5" stroke-dasharray="7 6"/>
+          <text x="250" y="158" fill="#ffd2bf" font-size="12" text-anchor="middle" font-family="Inter">20 km</text>
+          <!-- ripple -->
+          <circle cx="150" cy="232" r="120" fill="none" stroke="#19b3a6" stroke-opacity="0.18" stroke-width="2"/>
+          <circle cx="150" cy="232" r="160" fill="none" stroke="#19b3a6" stroke-opacity="0.10" stroke-width="2"/>
+        </svg>
       </div>
     </div>
+    <div class="hero__wave" aria-hidden="true"></div>
   </section>
 
-  <!-- ============ 分类磁贴 ============ -->
-  <section class="section" id="categories">
-    <div class="wrap">
-      <h2 class="section__title">Shop by Category</h2>
-      <div class="cat-grid" id="catGrid"></div>
-    </div>
-  </section>
-
-  <!-- ============ 趋势产品 ============ -->
-  <section class="section section--alt" id="trending">
+  <!-- ============ Why Batam ============ -->
+  <section class="section" id="batam">
     <div class="wrap">
       <div class="section__head">
-        <h2 class="section__title section__title--left">🔥 Trending</h2>
-        <a href="#" class="section__more">View All →</a>
+        <div>
+          <span class="kicker">LOCATION &amp; ADVANTAGE</span>
+          <h2 class="section__title section__title--left">Why Batam Is Built for Manufacturing</h2>
+        </div>
+        <p class="section__sub">An island engineered by policy and geography to move goods — and your margin — further.</p>
       </div>
-      <div class="prod-grid" id="trendingGrid"></div>
+
+      <div class="feature-grid">
+        <article class="feature">
+          <div class="feature__ic">🗺️</div>
+          <h3>Gateway to Asia</h3>
+          <p>Only 20 km from Singapore on the Strait of Malacca — one of the world's busiest shipping lanes. Direct reach to China, Malaysia, the Middle East, Europe and Africa.</p>
+        </article>
+        <article class="feature">
+          <div class="feature__ic">🏝️</div>
+          <h3>Free Trade Zone</h3>
+          <p>Production inputs enter duty-free, VAT-free and luxury-tax-free inside the zone (PP 41/2021, PP 25/2025). Store, assemble and re-export without Indonesian import duties.</p>
+        </article>
+        <article class="feature">
+          <div class="feature__ic">⚓</div>
+          <h3>World-Class Logistics</h3>
+          <p>Hang Nadim International Airport (Indonesia's longest runway, 4,025 m) plus Batu Ampar, Kabil &amp; Sekupang cargo ports with 106+ direct international shipping calls.</p>
+        </article>
+        <article class="feature">
+          <div class="feature__ic">🛡️</div>
+          <h3>Stable &amp; Safe</h3>
+          <p>Outside the Pacific Ring of Fire — free from earthquake and tsunami risk. A secure, business-friendly environment backed by BP Batam as single-window regulator.</p>
+        </article>
+        <article class="feature">
+          <div class="feature__ic">💡</div>
+          <h3>Skilled, Competitive Labor</h3>
+          <p>A growing, educated workforce at competitive costs versus regional peers — ideal for scale manufacturing, electronics assembly and precision production.</p>
+        </article>
+        <article class="feature">
+          <div class="feature__ic">📈</div>
+          <h3>Investment Incentives</h3>
+          <p>Tax holidays, super-deductible tax, GSP facilities and double-taxation treaties with 56+ countries (PP 47/2025 expanded the FTZ to 22 islands).</p>
+        </article>
+      </div>
     </div>
   </section>
 
-  <!-- ============ 促销条 ============ -->
-  <section class="promo">
-    <div class="wrap promo__inner">
-      <div>
-        <h3>New Arrivals Every Week</h3>
-        <p>Be the first to try the latest disposables &amp; devices.</p>
-      </div>
-      <a href="#new" class="btn btn--light">Explore New Arrivals</a>
-    </div>
-  </section>
-
-  <!-- ============ 新品 ============ -->
-  <section class="section" id="new">
+  <!-- ============ Our Factory ============ -->
+  <section class="section section--alt" id="factory">
     <div class="wrap">
       <div class="section__head">
-        <h2 class="section__title section__title--left">🆕 New Arrivals</h2>
-        <a href="#" class="section__more">View All →</a>
+        <div>
+          <span class="kicker">OUR FACTORY</span>
+          <h2 class="section__title section__title--left">A Manufacturing Partner, Not Just a Supplier</h2>
+        </div>
+        <p class="section__sub">[Replace with your real figures] — 13+ years of OEM/ODM experience, 10M+ units shipped annually to the US, EU and Asia.</p>
       </div>
-      <div class="prod-grid" id="newGrid"></div>
+
+      <div class="factory">
+        <div class="factory__intro">
+          <p>From formulation to finished, serialized packaging, we run a vertically integrated vape manufacturing line inside Batam's Free Trade Zone. Our team handles <strong>disposables, refillable pod systems, and premium e-liquids</strong> with full customization — flavor, coil, chassis, branding and compliant labeling for your target market.</p>
+          <ul class="ticks">
+            <li>End-to-end OEM &amp; ODM — design, tooling, molding, filling, assembly</li>
+            <li>Flexible MOQ and fast sampling for new brands</li>
+            <li>In-house QC: incoming, in-line and batch final inspection</li>
+            <li>Export documentation &amp; destination-market compliance support</li>
+          </ul>
+        </div>
+
+        <div class="factory__stats">
+          <div class="stat"><strong data-count="13">0</strong><span>+ Years</span></div>
+          <div class="stat"><strong data-count="10">0</strong><span>M+ Units / Year</span></div>
+          <div class="stat"><strong data-count="40">0</strong><span>+ Markets Served</span></div>
+          <div class="stat"><strong data-count="3">0</strong><span>ISO Certifications</span></div>
+        </div>
+      </div>
+
+      <div class="caps">
+        <span class="cap">Disposables</span>
+        <span class="cap">Pod Systems</span>
+        <span class="cap">E-Liquids</span>
+        <span class="cap">Custom Molds</span>
+        <span class="cap">OEM / ODM</span>
+        <span class="cap">Child-Resistant Pkg</span>
+        <span class="cap">Flavor Development</span>
+        <span class="cap">Brand Design</span>
+      </div>
+
+      <div class="certs">
+        <span class="cert">ISO 9001</span>
+        <span class="cert">ISO 14001</span>
+        <span class="cert">ISO 45001</span>
+        <span class="cert">SNI Ready</span>
+        <span class="cert">NPPBKC</span>
+        <span class="cert">BPOM Support</span>
+      </div>
     </div>
   </section>
 
-  <!-- ============ 热销 ============ -->
-  <section class="section section--alt" id="bestsellers">
+  <!-- ============ Compliance ============ -->
+  <section class="section" id="compliance">
     <div class="wrap">
       <div class="section__head">
-        <h2 class="section__title section__title--left">⭐ Best Sellers</h2>
-        <a href="#" class="section__more">View All →</a>
+        <div>
+          <span class="kicker">REGULATION &amp; COMPLIANCE</span>
+          <h2 class="section__title section__title--left">Indonesia Vape Policy &amp; What It Means for You</h2>
+        </div>
+        <p class="section__sub">We build compliance into every unit. Here's the landscape as of October 2026.</p>
       </div>
-      <div class="prod-grid" id="bestGrid"></div>
+
+      <div class="policy">
+        <article class="policy__card">
+          <h3>📜 Legal Status</h3>
+          <p>E-cigarettes are <strong>legal but strictly regulated</strong> in Indonesia. Under <strong>BPOM Regulation No. 18/2025</strong> (issued 26 Jul 2025, mandatory from <strong>26 Jul 2026</strong>), vapes are defined as <em>"Other Processed Tobacco Products" (HPTL)</em> — regulated like conventional tobacco, covering both natural and synthetic nicotine.</p>
+        </article>
+        <article class="policy__card">
+          <h3>🏛️ Who Regulates</h3>
+          <p>BPOM (Food &amp; Drug Authority), Ministry of Trade, Customs (Bea Cukai), Ministry of Industry and Ministry of Health. Selling or importing requires recommendation letters, <strong>SNI certification</strong>, an <strong>API</strong> importer license and trade-import approval.</p>
+        </article>
+        <article class="policy__card">
+          <h3>🧪 Testing &amp; SNI</h3>
+          <p>Every variant (flavor/strength/formula) needs nicotine-content testing by a BPOM-accredited lab. Additives are banned unless proven safe, with two-stage testing by two independent labs. SNI standards: e-liquids <strong>SNI 9070:2022</strong>, heated tobacco <strong>SNI 8946:2021</strong>.</p>
+        </article>
+        <article class="policy__card">
+          <h3>📦 Packaging &amp; Labeling</h3>
+          <p>Health warnings must cover <strong>50% of front &amp; back</strong> (black background, yellow "Peringatan" text), with <strong>5 warning-image sets</strong> per variant. Must show nicotine content, ingredients, capacity (ml), "Mengandung nikotin" and the <strong>21+ / no-pregnant-women</strong> statement. Size limits: closed pods ≤2 ml &amp; ≤2/pack; open-system bottles 10 or 20 ml.</p>
+        </article>
+        <article class="policy__card">
+          <h3>📢 Advertising Rules</h3>
+          <p>Social-media advertising is <strong>banned</strong>; e-commerce must enforce <strong>21+ age verification</strong>; offline sales are prohibited within <strong>200 m of schools</strong>; promotion and sponsorship are heavily restricted.</p>
+        </article>
+        <article class="policy__card">
+          <h3>💰 Excise &amp; Tax</h3>
+          <p>Under Finance Ministry Reg <strong>PMK 96/2024</strong> (eff. 1 Jan 2025): heated tobacco 6,240 IDR/g, open-system e-liquid 1,368 IDR/ml, pod refills 41,983 IDR/pod — plus 5% import duty and 11% VAT on the domestic market. <em>Export-bound production in the FTZ is structured to avoid Indonesian domestic excise.</em></p>
+        </article>
+      </div>
+
+      <p class="disclaimer">⚠️ Informational summary only — vape regulations change and vary by destination market (US PMTA, EU TPD, etc.). Confirm specifics with BPOM, a licensed Indonesian legal counsel, and your target-market authority before production or import. [Your Factory Name] provides compliance-support documentation but is not a regulatory authority.</p>
     </div>
   </section>
 
-  <!-- ============ 品牌墙 ============ -->
-  <section class="section brands">
+  <!-- ============ Logistics ============ -->
+  <section class="section section--alt" id="logistics">
     <div class="wrap">
-      <h2 class="section__title">Featured Brands</h2>
-      <div class="brand-marquee">
-        <div class="brand-track" id="brandTrack"></div>
+      <div class="section__head">
+        <div>
+          <span class="kicker">LOGISTICS &amp; SHIPPING</span>
+          <h2 class="section__title section__title--left">From Our Line to Your Market</h2>
+        </div>
+        <p class="section__sub">Batam's free-trade status turns shipping from a cost center into a competitive edge.</p>
+      </div>
+
+      <div class="logi">
+        <article class="logi__card">
+          <h3>⚓ Batu Ampar Port</h3>
+          <p>Batam's main public international cargo port (~300k TEU/yr, expanding to 10 m draft). The primary export gateway for the island's manufacturing base, facing straight onto Singapore's shipping network.</p>
+        </article>
+        <article class="logi__card">
+          <h3>🛢️ Kabil Port</h3>
+          <p>Private industrial port for heavy industry, energy logistics and liquid cargo (LNG, oils), with 10–15 m draft for deep-draft vessels and integrated CIQP clearance.</p>
+        </article>
+        <article class="logi__card">
+          <h3>✈️ Hang Nadim Airport</h3>
+          <p>Indonesia's longest runway (4,025 m) — air-freight option for samples, small-batch and time-critical shipments to global hubs.</p>
+        </article>
+        <article class="logi__card">
+          <h3>🔁 FTZ Re-Export</h3>
+          <p>Goods can be stored, processed and assembled in-zone, then exported without Indonesian import duties — slashing landed cost and cash-flow pressure versus in-territory production.</p>
+        </article>
+      </div>
+
+      <div class="reach">
+        <span>Singapore</span><span>China</span><span>Malaysia</span><span>Middle East</span><span>Europe</span><span>Africa</span><span>USA</span>
       </div>
     </div>
   </section>
 
-  <!-- ============ 订阅 / 社媒 ============ -->
-  <section class="newsletter">
-    <div class="wrap newsletter__inner">
-      <div class="newsletter__copy">
-        <h2>#ElementVape Gallery</h2>
-        <p>Tag us for a chance to be featured. Join 200K+ subscribers for drops, deals &amp; restocks.</p>
+  <!-- ============ Process ============ -->
+  <section class="section" id="process">
+    <div class="wrap">
+      <span class="kicker">HOW WE WORK</span>
+      <h2 class="section__title">From Inquiry to Shipment in 6 Steps</h2>
+      <ol class="steps">
+        <li><span class="steps__num">1</span><h3>Brief &amp; Quote</h3><p>Share your concept, target market and volume. We return a tailored OEM/ODM proposal.</p></li>
+        <li><span class="steps__num">2</span><h3>Design &amp; Tooling</h3><p>Custom molds, chassis, flavor and branding — engineered for your compliance needs.</p></li>
+        <li><span class="steps__num">3</span><h3>Sampling</h3><p>Fast prototypes with QC reports so you can validate before mass production.</p></li>
+        <li><span class="steps__num">4</span><h3>Mass Production</h3><p>ISO-controlled lines with in-line audits and batch traceability.</p></li>
+        <li><span class="steps__num">5</span><h3>Compliance &amp; QC</h3><p>Testing, labeling and export documentation prepared for your destination market.</p></li>
+        <li><span class="steps__num">6</span><h3>Global Shipping</h3><p>FTZ export via Batam's ports/airport to Singapore, Asia, the EU, Middle East and beyond.</p></li>
+      </ol>
+    </div>
+  </section>
+
+  <!-- ============ FAQ ============ -->
+  <section class="section section--alt" id="faq">
+    <div class="wrap">
+      <span class="kicker">FAQ</span>
+      <h2 class="section__title">Questions Buyers Ask</h2>
+      <div class="faq" id="faqList">
+        <div class="faq__item">
+          <button class="faq__q">Is vaping legal in Indonesia?<span>+</span></button>
+          <div class="faq__a"><p>Yes. E-cigarettes are legal but strictly regulated. Under BPOM Regulation No. 18/2025 they are classified as "Other Processed Tobacco Products" (HPTL) and regulated like conventional tobacco — covering both natural and synthetic nicotine. The transition period runs to 26 July 2026.</p></div>
+        </div>
+        <div class="faq__item">
+          <button class="faq__q">Why manufacture in Batam instead of elsewhere?<span>+</span></button>
+          <div class="faq__a"><p>Batam's Free Trade Zone lets production inputs enter duty-free, VAT-free and luxury-tax-free, and finished goods can be re-exported without Indonesian import duties. Its 20 km proximity to Singapore and direct shipping lanes cut both cost and lead time.</p></div>
+        </div>
+        <div class="faq__item">
+          <button class="faq__q">Can you support my market's compliance (US PMTA / EU TPD)?<span>+</span></button>
+          <div class="faq__a"><p>We prepare export-ready products with proper documentation, child-resistant packaging, ingredient transparency and labeling. For market-specific approvals (US PMTA, EU TPD, etc.) we coordinate the required testing and paperwork with your authorized representatives.</p></div>
+        </div>
+        <div class="faq__item">
+          <button class="faq__q">What are your MOQs and lead times?<span>+</span></button>
+          <div class="faq__a"><p>MOQs are flexible and tailored per project; sampling typically runs in days to a couple of weeks. [Replace with your real MOQ &amp; lead-time figures.]</p></div>
+        </div>
       </div>
-      <form class="newsletter__form" id="newsletterForm">
-        <input type="email" id="newsletterEmail" placeholder="Enter your email" required />
-        <button type="submit" class="btn btn--primary">Subscribe</button>
+    </div>
+  </section>
+
+  <!-- ============ Contact / CTA ============ -->
+  <section class="cta" id="contact">
+    <div class="wrap cta__inner">
+      <div class="cta__copy">
+        <h2>Let's Build Your Brand in Batam</h2>
+        <p>Tell us about your product and target market. Our team replies within 1 business day with a tailored OEM/ODM proposal.</p>
+        <ul class="cta__points">
+          <li>✓ Free initial consultation &amp; quote</li>
+          <li>✓ Full BPOM 18/2025 &amp; export compliance support</li>
+          <li>✓ Duty-free FTZ production, global shipping</li>
+        </ul>
+      </div>
+      <form class="cta__form" id="contactForm">
+        <div class="field">
+          <input type="text" id="cName" placeholder="Your Name" required />
+        </div>
+        <div class="field">
+          <input type="email" id="cEmail" placeholder="Work Email" required />
+        </div>
+        <div class="field">
+          <input type="text" id="cCompany" placeholder="Company" />
+        </div>
+        <div class="field">
+          <textarea id="cMsg" rows="4" placeholder="Product type, volume, target market…" required></textarea>
+        </div>
+        <button type="submit" class="btn btn--primary btn--lg btn--block">Send Inquiry</button>
+        <p class="cta__note" id="contactNote"></p>
       </form>
-      <p class="newsletter__note" id="newsletterNote"></p>
     </div>
   </section>
 
-  <!-- ============ 页脚 ============ -->
+  <!-- ============ Footer ============ -->
   <footer class="footer">
     <div class="wrap footer__grid">
-      <div class="footer__col footer__brand">
-        <a href="#" class="logo logo--footer">ELEMENT<span>VAPE</span></a>
-        <p>Your trusted online vape shop for disposables, kits &amp; premium e-liquids.</p>
-        <div class="pay">
-          <span>VISA</span><span>MC</span><span>AMEX</span><span>PYPL</span><span>♢</span>
-        </div>
-      </div>
-      <div class="footer__col">
-        <h4>Shop</h4>
-        <a href="#">Disposables</a>
-        <a href="#">Starter Kits</a>
-        <a href="#">E-Liquids</a>
-        <a href="#">Pod Systems</a>
-        <a href="#">Tanks &amp; Coils</a>
-      </div>
-      <div class="footer__col">
-        <h4>Support</h4>
-        <a href="#">Help Center</a>
-        <a href="#">Track Order</a>
-        <a href="#">Returns</a>
-        <a href="#">Authenticity</a>
-        <a href="#">Contact Us</a>
+      <div class="footer__brand">
+        <a href="#top" class="logo logo--footer">[YOUR&nbsp;BRAND]<span>.id</span></a>
+        <p>OEM/ODM vape manufacturing in Batam Free Trade Zone, Indonesia — duty-free, export-ready, compliance-first.</p>
       </div>
       <div class="footer__col">
         <h4>Company</h4>
-        <a href="#">About</a>
-        <a href="#">Rewards</a>
-        <a href="#">Affiliate</a>
-        <a href="#">Wholesale</a>
-        <a href="#">Careers</a>
+        <a href="#factory">Our Factory</a>
+        <a href="#process">How We Work</a>
+        <a href="#compliance">Compliance</a>
+        <a href="#faq">FAQ</a>
+      </div>
+      <div class="footer__col">
+        <h4>Location</h4>
+        <a href="#batam">Why Batam</a>
+        <a href="#logistics">Logistics</a>
+        <a href="#">Batam, Riau Islands, Indonesia</a>
+      </div>
+      <div class="footer__col">
+        <h4>Contact</h4>
+        <a href="mailto:hello@your-domain.com">hello@your-domain.com</a>
+        <a href="#">+62 ___-___-___</a>
+        <a href="#contact">Get a Quote</a>
       </div>
     </div>
     <div class="footer__bottom">
       <div class="wrap footer__bottom-inner">
-        <span>© 2026 Element Vape Clone · Demo only, not affiliated with the original brand.</span>
-        <nav>
-          <a href="#">Privacy</a><a href="#">Terms</a><a href="#">21+ Disclaimer</a>
-        </nav>
+        <span>© 2026 [Your Factory Name]. Demo site — replace placeholders with your real brand, figures and contact.</span>
+        <nav><a href="#">Privacy</a><a href="#">Terms</a><a href="#">21+ Only</a></nav>
       </div>
     </div>
   </footer>
-
-  <!-- ============ 快速查看弹窗 ============ -->
-  <div class="modal" id="modal" hidden>
-    <div class="modal__backdrop" data-close></div>
-    <div class="modal__panel" role="dialog" aria-modal="true">
-      <button class="modal__close" data-close aria-label="关闭">×</button>
-      <div class="modal__body" id="modalBody"></div>
-    </div>
-  </div>
 
   <script src="js/main.js"></script>
 </body>
